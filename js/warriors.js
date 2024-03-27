@@ -220,7 +220,7 @@ const kenji = new Fighter({
       x: 0,
       y: 0,
     },
-    attackBox: { offset:{x:100,y:50},height: 50,width:160},
+    attackBox: { offset:{x:280,y:50},height: 50,width:160},
     imageSrc:"./img/left/infernoReaver/Idle.png",
     framesMax:4,
     scale:3.5,
@@ -267,3 +267,169 @@ const kenji = new Fighter({
 
 
    
+   const radiantFist = new Fighter({
+    position: {
+      x: 0,
+      y: 0,
+    },
+    velocity: {
+      x: 0,
+      y: 0,
+    },
+    attackBox: { offset:{x:100,y:50},height: 50,width:160},
+    imageSrc:"./img/left/radiantFist/Idle.png",
+    framesMax:4,
+    scale:3.5,
+    offset : { x: 88, y: 110 },
+    sprites: {
+        idle: {
+          imageSrc:"./img/left/radiantFist/Idle.png",
+          framesMax:4
+        },
+        run: {
+          imageSrc:"./img/left/radiantFist/Run.png",
+          framesMax:8
+        },
+        jump: {
+          imageSrc:"./img/left/radiantFist/Jump.png",
+          framesMax:2
+        },
+        fall: {
+          imageSrc:"./img/left/radiantFist/Fall.png",
+          framesMax:2
+        },
+        attack1 : {
+          imageSrc:"./img/left/radiantFist/Attack1.png",
+          framesMax:4
+        },
+        attack2 : {
+          imageSrc:"./img/left/radiantFist/Attack2.png",
+          framesMax:4
+        },
+        takeHit : {
+          imageSrc:"./img/left/radiantFist/Hit.png",
+          framesMax:4
+        },
+        death: {
+          imageSrc:"./img/left/radiantFist/Death.png",
+          framesMax:4
+        }
+    },
+
+    attackDamageFrame:2,//the specific frame in the attack the damage is done
+
+  
+   });
+
+
+
+   const vengeanceViper = new Fighter({
+    position: {
+      x: 0,
+      y: 0,
+    },
+    velocity: {
+      x: 0,
+      y: 0,
+    },
+    attackBox: { offset:{x:100,y:50},height: 50,width:160},
+    imageSrc:"./img/left/vengeanceViper/Idle.png",
+    framesMax:4,
+    scale:3.5,
+    offset : { x: 88, y: 100 },
+    sprites: {
+        idle: {
+          imageSrc:"./img/left/vengeanceViper/Idle.png",
+          framesMax:4
+        },
+        run: {
+          imageSrc:"./img/left/vengeanceViper/Run.png",
+          framesMax:8
+        },
+        jump: {
+          imageSrc:"./img/left/vengeanceViper/Jump.png",
+          framesMax:2
+        },
+        fall: {
+          imageSrc:"./img/left/vengeanceViper/Fall.png",
+          framesMax:2
+        },
+        attack1 : {
+          imageSrc:"./img/left/vengeanceViper/Attack1.png",
+          framesMax:4
+        },
+        attack2 : {
+          imageSrc:"./img/left/vengeanceViper/Attack2.png",
+          framesMax:4
+        },
+        takeHit : {
+          imageSrc:"./img/left/vengeanceViper/Hit.png",
+          framesMax:4
+        },
+        death: {
+          imageSrc:"./img/left/vengeanceViper/Death.png",
+          framesMax:4
+        }
+    },
+
+    attackDamageFrame:2,//the specific frame in the attack the damage is done
+
+  
+   });
+
+
+
+
+   const whisperingSteel = new Fighter({
+    position: {
+      x: 0,
+      y: 0,
+    },
+    velocity: {
+      x: 0,
+      y: 0,
+    },
+    attackBox: { offset:{x:100,y:50},height: 50,width:160},
+    imageSrc:"./img/left/whisperingSteel/Idle.png",
+    framesMax:4,
+    scale:3.5,
+    offset : { x: 88, y: 80 },
+    sprites: {
+        idle: {
+          imageSrc:"./img/left/whisperingSteel/Idle.png",
+          framesMax:4
+        },
+        run: {
+          imageSrc:"./img/left/whisperingSteel/Run.png",
+          framesMax:8
+        },
+        jump: {
+          imageSrc:"./img/left/whisperingSteel/Jump.png",
+          framesMax:2
+        },
+        fall: {
+          imageSrc:"./img/left/whisperingSteel/Fall.png",
+          framesMax:2
+        },
+        attack1 : {
+          imageSrc:"./img/left/whisperingSteel/Attack1.png",
+          framesMax:4
+        },
+        attack2 : {
+          imageSrc:"./img/left/whisperingSteel/Attack2.png",
+          framesMax:4
+        },
+        takeHit : {
+          imageSrc:"./img/left/whisperingSteel/Hit.png",
+          framesMax:4
+        },
+        death: {
+          imageSrc:"./img/left/whisperingSteel/Death.png",
+          framesMax:4
+        }
+    },
+
+    attackDamageFrame:2,//the specific frame in the attack the damage is done
+
+  
+   });

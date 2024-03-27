@@ -12,7 +12,7 @@ window.addEventListener("keydown", (event) => {
           player.lastKey = "a";
           break;
         case "w":
-          if (player.velocity.y == 0){
+          if (player.velocity.y === 0){
             player.velocity.y = jumpHeight;
           }
           break;
@@ -37,7 +37,7 @@ window.addEventListener("keydown", (event) => {
           enemy.lastKey = "ArrowLeft";
           break;
         case "ArrowUp":
-          if (enemy.velocity.y == 0){
+          if (enemy.velocity.y === 0){
             enemy.velocity.y = jumpHeight;
           }
           break;

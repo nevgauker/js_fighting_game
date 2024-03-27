@@ -102,8 +102,8 @@ class Fighter extends Sprite {
       this.position.x += this.velocity.x;
       this.position.y += this.velocity.y;
 
-
-      // c.fillRect(this.attackBox.position.x, this.attackBox.position.y,this.attackBox.width,this.attackBox.height);
+      //for testing
+      c.fillRect(this.attackBox.position.x, this.attackBox.position.y,this.attackBox.width,this.attackBox.height);
 
       //gravity function
 

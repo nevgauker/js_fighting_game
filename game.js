@@ -24,9 +24,38 @@ const background = new Sprite({position:{
   const shop = new Sprite({position:{
     x:600,y:128},imageSrc:"./img/shop.png",scale:2.75,framesMax:6});
 
+const selected = Number.parseInt(sessionStorage.getItem('selectedImageIndex'))
 
-    
-const player = samuraiMack;
+
+let player
+
+switch (selected) {
+  case 1:
+    player = samuraiMack
+    break;
+  case 2:
+    player = divineRevenant
+    break;
+  case 3:
+    player = infernoReaver
+    break;
+  case 4:
+    player = radiantFist
+    break;
+  case 5:
+    player = shadowstrike
+    break;
+  case 6:
+    player = vengeanceViper
+    break;
+    case 7:
+      player = whisperingSteel
+      break;
+  default:
+    break;
+
+}
+
 const enemy = kenji;
 
 decreaseTimer()
@@ -89,7 +118,7 @@ function animate() {
     enemy.takeHit();
 
     gsap.to('#enemyHealth',{
-      width :enemy.health + '%'
+      width :`${enemy.health}%`
     })
     // document.querySelector('#enemyHealth').style.width = enemy.health + '%';
   }
@@ -110,7 +139,7 @@ function animate() {
     // document.querySelector('#playerHealth').style.width = player.health + '%';
 
     gsap.to('#playerHealth',{
-      width :player.health + '%'
+      width :`${player.health}%`
     })
   }
 

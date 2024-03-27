@@ -35,16 +35,29 @@
       height: 100px;
       margin: 5px;
     }
+    .selected {
+    border: 2px solid red;
+  }
   </style>
 </head>
 <body>
   <div style="position: relative; display: inline-block">
     <div class="image-row">
-      <img src="./img/main/samuraiMack/profileImage.png" alt="mack" />
+      <img src="./img/main/samuraiMack/profileImage.png" alt="mack" id="img1" onclick="selectImage(1)"/>
+      <img src="./img/main/divineRevenant/profileImage.png" alt="divine" id="img2" onclick="selectImage(2)"/>
+      <img src="./img/main/infernoReaver/profileImage.png" alt="inferno" id="img3" onclick="selectImage(3)"/>
+      <img src="./img/main/radiantFist/profileImage.png" alt="radiant" id="img4" onclick="selectImage(4)"/>
+      <img src="./img/main/shadowstrike/profileImage.png" alt="shadows" id="img5" onclick="selectImage(5)"/>
+      <img src="./img/main/vengeanceViper/profileImage.png" alt="vengeance" id="img6" onclick="selectImage(6)"/>
+      <img src="./img/main/whisperingSteel/profileImage.png" alt="whispering" id="img7" onclick="selectImage(7)"/>
+
       <h1>VS</h1>
       <img src="./img/main/kenji/profileImage.png" alt="kenji" />
     </div>
     <canvas></canvas>
+  </div>
+  <div style="position: fixed; bottom: 0; left: 0; width: 100%; height: 100px; background-color: #f0f0f0;">
+   left player , c to switch charecter . right player has only one option . space to start the fight
   </div>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
@@ -54,4 +67,5 @@
   ></script>
   <script src="js/classes.js"></script>
   <script src="index.js"></script>
+  <script src="js/selection.js"></script>
 </body>
